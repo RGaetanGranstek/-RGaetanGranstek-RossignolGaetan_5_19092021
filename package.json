@@ -1,0 +1,22 @@
+{
+  "name": "projet-5",
+  "version": "1.0.0",
+  "description": "Site ORINOCO",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch ./Front-End/Sass/main.scss:./Front-End/CSS/style.css",
+    "prefix": "postcss ./Front-End/CSS/style.css --use autoprefixer -d ./Front-End/CSS/prefixed/",
+    "browserslist": "last 4 versions"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RGaetanGranstek/-RGaetanGranstek-RossignolGaetan_5_19092021.git"
+  },
+  "author": "RGaetanGranstek",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RGaetanGranstek/-RGaetanGranstek-RossignolGaetan_5_19092021/issues"
+  },
+  "homepage": "https://github.com/RGaetanGranstek/-RGaetanGranstek-RossignolGaetan_5_19092021#readme"
+}

@@ -1,0 +1,22 @@
+//reset CSS
+@import "../CSS/normalize.css";
+
+//Google Fonts
+@import url('');
+
+// font-awesome
+@import "CSS/fontawesome/scss/fontawesome.scss";
+@import "CSS/fontawesome/scss/brands.scss";
+@import "CSS/fontawesome/scss/regular.scss";
+@import "CSS/fontawesome/scss/solid.scss";
+
+//import keyframes, variables and mixins
+@import "utils/keyframes";
+@import "utils/variables";
+@import "utils/mixins";
+
+//import styles
+@import "base/general";
+@import "layout/header";
+@import "layout/main";
+@import "layout/footer";
