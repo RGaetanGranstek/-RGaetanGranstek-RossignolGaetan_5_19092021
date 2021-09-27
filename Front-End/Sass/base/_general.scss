@@ -1,0 +1,7 @@
+body {
+  img {
+    @include breakpoint(laptop-desktop) {
+      height: 400px !important;
+    }
+  }
+}

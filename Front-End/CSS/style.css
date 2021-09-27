@@ -1,6 +1,4 @@
 @charset "UTF-8";
-@import "../CSS/normalize.css";
-@import url("");
 /*!
  * Font Awesome Free 5.15.3 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
@@ -6117,6 +6115,12 @@ readers do not read off random characters that represent icons */
 .fas {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
+}
+
+@media (min-width: 64em) {
+  body img {
+    height: 400px !important;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

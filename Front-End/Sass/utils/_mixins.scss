@@ -1,0 +1,7 @@
+@mixin breakpoint($size-screen) {
+  @if $size-screen == laptop-desktop {
+    @media (min-width: 64em) {
+      @content;
+    }
+  }
+}
