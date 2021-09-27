@@ -6119,6 +6119,7 @@ readers do not read off random characters that represent icons */
 
 @media (min-width: 64em) {
   body img {
+    width: 100%;
     height: 400px !important;
   }
 }
