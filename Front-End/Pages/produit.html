@@ -7,7 +7,7 @@
     <title>ORINOCO</title>
     <meta name="description" content="ORINOCO - Produit">
 
-    <link rel="stylesheet" type="text/css" href="./Front-End/CSS/style.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
 
     <!-- jQuery, Popper.js -->
@@ -20,23 +20,75 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
-    <script src="./Front-End/JS/indexOurson.js" defer></script>
-    <script src="./Front-End/JS/produitOurson.js" defer></script>
+    <script src="../JS/general.js" defer></script>
+    <script src="../JS/produitOurson.js" defer></script>
 </head>
 <body>
     <header class="row" >
         <div class="row container m-0">
             <div class="col-sm-6 justify-content-left p-0">
-                <img class="col-12" src="./Front-End/Images/15675819263013_image1.png" alt="Logo de l'entreprise ORINOCO" height="250px">
+                <a href="../../index.html">
+                    <img class="col-12" src="../Images/15675819263013_image1.png" alt="Logo de l'entreprise ORINOCO" height="250px">
+                </a>
+            </div>
+        </div>
+        <div class="bg-secondary">
+            <div class="container">
+                <div class="row">
+                    <nav class="col navbar navbar-expand-lg navbar-dark">
+                        <a class="col-2 navbar-brand" href="../../index.html">- Orinoco -</a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div id="navbarSupportedContent" class="collapse navbar-collapse">
+                            <ul class="navbar-nav p-3">
+                                <li class="nav-item active">
+                                    <a class="nav-link text-white" href="../../index.html">Accueil</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Produits</a>
+                                    <div id="linkOurson" class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white" href="#">Panier</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
             </div>
         </div>
     </header>
     <main>
-        <div id="OursonProduit" class="row g-3 justify-content-between">
-    
+        <div id="oursonProduit" class="row g-3 justify-content-between">
         </div>
     </main>
 </body>
-<footer>
-
+<footer class="bg-secondary p-4" >
+    <div class="container">
+        <div class="row">
+            <div class="col-sm text-white" >
+                <h3>A propos</h3>
+                <ul>
+                    <li><a class=" text-white" href="#">Fonctionnement du site</a></li>
+                    <li><a class=" text-white" href="#">Conditions générales de vente</a></li>
+                    <li><a class=" text-white" href="#">Données et confidentialité</a></li>
+                </ul>
+            </div>
+            <div class="col-sm text-white" >
+                <h3>Nos Produits</h3>
+                <ul>
+                    <li><a class=" text-white" href="#">Charte qualité</a></li>
+                </ul>
+            </div>
+            <div class="col-sm text-white" >
+                <h3>Assistance</h3>
+                <ul>
+                    <li><a class=" text-white" href="#">Centre d'aide</a></li>
+                    <li><a class=" text-white" href="mailto:L'oursEnPeluche@ourson.fr">Nous contacter</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
 </footer>
