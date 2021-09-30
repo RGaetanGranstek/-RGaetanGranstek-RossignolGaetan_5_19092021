@@ -21,7 +21,7 @@ oursonSelect();
 
 // Création de ma class d'Ourson en peluche
 class ficheOurson {
-  constructor(_id, name, price, description, imageUrl, colors, quantity) {
+  constructor(_id, name, price, description, imageUrl, colors) {
     this._id[0] = _id;
     this.name[0] = name;
     this.price[0] = price;
@@ -33,46 +33,22 @@ class ficheOurson {
 }
 // console.log(ficheOurson);
 
-//
-//
+//récupérer l'id dans l'url
+const parsedUrl = new URL(window.location.href);
+const oursonCible = parsedUrl.searchParams.get("_id");
+// console.log(parsedUrl.searchParams.get("_id"));
 
-function oursonSelectPage() {
-  fetch(
-    "http://127.0.0.1:5500/Front-End/Pages/produit.html?_id=5be9c8541c9d440000665243"
-  )
-    .then(function (res) {
-      if (res.ok) {
-        console.log(res);
-      }
-    })
-    .catch(function (err) {
-      console.log(err);
-      // Une erreur est survenue
-    });
+// Création de ma class pour extraire les couleurs
+class ficheOursonColors {
+  constructor(colors) {
+    this.colors = colors;
+  }
 }
-oursonSelectPage();
+// console.log(ficheOursonColors);
 
-function requestInfo() {
-  // récupération de l'id
-  // let idMaterial = ficheOurson._id;
-
-  // Création de l'objet AJAX
-  let ajax = new XMLHttpRequest();
-
-  //méthode de connexion
-  ajax.open(
-    "GET",
-    // "http://127.0.0.1:5500/frontend/Pages/produit.html?_id" + ficheOurson._id
-    "http://127.0.0.1:5500/Front-End/Pages/produit.html?_id=5be9c8541c9d440000665243"
-  );
-
-  // fonction de rappel
-  ajax.onload = function (b) {
-    console.log(b);
-    // document.getElementById("linkOurson").innerHTML = this.responseText;
-  };
-
-  //lance la requéte
-  ajax.send();
-}
-requestInfo();
+// pointer-cursor fonctionne pas avec bootstrap et CSS     X
+// couleur background      X
+// centrage page produit      X
+// améliorer informations card produit    X
+// mise en place chekbox       X
+// fonction carteId a améliorer (passe toute la liste d'objet en revue)

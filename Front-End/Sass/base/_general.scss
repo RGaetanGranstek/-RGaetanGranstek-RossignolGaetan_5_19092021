@@ -1,8 +1,19 @@
-body {
+// background color
+body > header > div {
+  @include background-color($background-color: $colorBackgroundHead);
+}
+
+// size image
+main {
   img {
     @include breakpoint(laptop-desktop) {
       width: 100%;
       height: 400px !important;
     }
   }
+}
+
+img:hover,
+a:hover {
+  cursor: pointer !important;
 }
