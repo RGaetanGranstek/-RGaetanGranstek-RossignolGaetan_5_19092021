@@ -6127,6 +6127,10 @@ main img {
   width: 450px;
 }
 
+.logoSize {
+  height: 250px;
+}
+
 img:hover,
 a:hover {
   cursor: pointer !important;
