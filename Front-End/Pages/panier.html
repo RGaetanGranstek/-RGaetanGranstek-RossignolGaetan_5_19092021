@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ORINOCO</title>
+    <meta name="description" content="ORINOCO - Produit">
+
+    <link rel="stylesheet" type="text/css" href="../CSS/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <!-- favicon -->
+    <link rel="icon" type="image/png" sizes="16x16"  href="../Images/favicon-16x16.png">
+
+    <!-- jQuery, Popper.js -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+    <script src="../JS/general.js" defer></script>
+    <script src="../JS/panierOurson.js" defer></script>
+</head>
+<body>
+    <header class="row" >
+        <div class="row container m-0">
+            <div class="col-sm-6 justify-content-left p-0">
+                <a href="../../index.html">
+                    <img class="col-12" src="../Images/15675819263013_image1.png" alt="Logo de l'entreprise ORINOCO" height="250px">
+                </a>
+            </div>
+        </div>
+        <div class="bg-secondary">
+            <div class="container">
+                <div class="row">
+                    <nav class="col navbar navbar-expand-lg navbar-dark">
+                        <a class="col-2 navbar-brand" href="../../index.html">- Orinoco -</a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div id="navbarSupportedContent" class="collapse navbar-collapse">
+                            <ul class="navbar-nav p-3">
+                                <li class="nav-item active">
+                                    <a class="nav-link text-white" href="../../index.html">Accueil</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Produits</a>
+                                    <div id="linkOurson" class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a id="apercuPanier" class="nav-link text-white" href="./panier.html">Panier</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <!-- Tableau de commande-->
+        <section id="section" class="container align-middle ">
+            <div class=" d-none" id="panier">
+                <div class="table-responsive">
+                    <table class="table table-hover my-auto mx-0">
+                        <thead>
+                            <tr class="text-center fs-5">
+                                <th scole="col">Produit</th>
+                                <th scole="col">Nom</th>
+                                <th scole="col">colors</th>
+                                <th scole="col">Quantité</th>
+                                <th scole="col">Prix</th>
+                                <th scole="col">Sous-total</th>
+                            </tr>
+                        </thead>
+                        <tbody id="listePanier">
+                        <!-- PanierOurson.js -->
+                        </tbody>
+                        <tfoot>
+                            <tr class="text-center fs-5">
+                                <th colspan="4"></th>
+                                <th colspan="1" class="bg-light">Total : </th>
+                                <th colspan="1" id="prixTotal" class="bg-light"></th>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+                <div class="text-center row justify-content-between" id="validationButton">
+                    <div class="col-4 my-4">
+                        <button aria-label="Vider le panier" id="effacerPanier" type="button" class="btn btn-outline-danger w-75">Vider le panier</button>
+                    </div>
+                    <div class="col-4 my-4">
+                        <button aria-label="Valider le panier" type="submit" class="btn btn-outline-success w-75" id="validationpanier">Valider le panier</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Tableau de commande vide -->
+        <section id="panierVide">
+            <div class="container my-3 py-1">
+                <div class="text-center my-5 shadow p-3 mb-5 bg-body rounded">
+                    <h1 class="fs-1 font-weight-bold text-secondary my-5">Votre panier ne contient aucun ours en peluche</br>pour débuter une adoption.</br></br>||</br>\/
+                    </h1>
+                    <a role="button" class="btn btn-outline-success text-uppercase my-3" href="../../index.html">Retour à l'accueil</a>
+                </div>
+            </div>`
+        </section>
+        <!-- Formulaire -->
+        <div class="mt-5 mx-5" id="formulaire">
+            <form class="row g-3" id="orderFormValidity">
+                <h2 class="text-center">Merci de bien vouloir saisir les champs suivants afin de finaliser votre commande :</h2>
+                <div class="col-md-4">
+                    <div>
+                        <label for="validationPrenom" class="form-label">Prénom</label>
+                        <input type="text" class="form-control" id="firstName" placeholder="Exemple: 'gaëtan'"
+                            pattern="^(([a-zA-ZÀ-ÿ]+[\s\-]{1}[a-zA-ZÀ-ÿ]+)|([a-zA-ZÀ-ÿ]+))$" required>
+                    </div>
+                    <div>
+                        <label for="validationNom" class="form-label">Nom</label>
+                        <input type="text" class="form-control" id="lastName" placeholder="Exemple: 'rossignol'"
+                            pattern="^(([a-zA-ZÀ-ÿ]+[\s\-]{1}[a-zA-ZÀ-ÿ]+)|([a-zA-ZÀ-ÿ]+))$" required>
+                    </div>
+                    <div>
+                        <label for="validationVille" class="form-label">Ville</label>
+                        <input type="text" class="form-control" id="city" placeholder="Exemple: 'Paris'"
+                            pattern="^(([a-zA-ZÀ-ÿ]+[\s\-]{1}[a-zA-ZÀ-ÿ]+)|([a-zA-ZÀ-ÿ]+)){1,10}$" required>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div>
+                        <label for="validationAdresse" class="form-label">Adresse</label>
+                        <input type="text" class="form-control" id="address" placeholder="Exemple: '100 place orinoco'"
+                            pattern="^(([a-zA-ZÀ-ÿ0-9]+[\s\-]{1}[a-zA-ZÀ-ÿ0-9]+)){1,10}$" required>
+                    </div>
+                    <div>
+                        <label for="validationEmail" class="form-label">Email</label>
+                        <div class="input-group has-validation">
+                            <span class="input-group-text" id="inputGroupPrepend">@</span>
+                            <input type="text" class="form-control" id="email" placeholder="Exemple: 'L'oursEnPeluche@ourson.fr'"
+                                aria-describedby="inputGroupPrepend"
+                                pattern="^[a-zA-Z0-9._-]+@[a-zA-Z0-9._-]{2,}\.[a-z]{2,4}$" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center my-5 d-md-flex justify-content-md-end">
+                    <div class="col-12 col-sm-6 my-4">
+                        <button aria-label="Passer la commande" type="submit" class="btn btn-outline-success mx-5" id="commande">Passer la commande</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+<footer class="bg-secondary p-4" >
+    <div class="container">
+        <div class="row">
+            <div class="col-sm text-white" >
+                <h2>A propos</h2>
+                <ul>
+                    <li><a class=" text-white" href="#">Fonctionnement du site</a></li>
+                    <li><a class=" text-white" href="#">Conditions générales de vente</a></li>
+                    <li><a class=" text-white" href="#">Données et confidentialité</a></li>
+                </ul>
+            </div>
+            <div class="col-sm text-white" >
+                <h2>Nos Produits</h2>
+                <ul>
+                    <li><a class=" text-white" href="#">Charte qualité</a></li>
+                </ul>
+            </div>
+            <div class="col-sm text-white" >
+                <h2>Assistance</h2>
+                <ul>
+                    <li><a class=" text-white" href="#">Centre d'aide</a></li>
+                    <li><a class=" text-white" href="mailto:`L'oursEnPeluche@ourson.fr`">Nous contacter</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>

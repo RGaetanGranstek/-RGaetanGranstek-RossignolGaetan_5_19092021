@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ORINOCO</title>
-    <meta name="description" content="ORINOCO - Produit">
+    <meta name="description" content="ORINOCO - Commande">
 
     <link rel="stylesheet" type="text/css" href="../CSS/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
@@ -24,7 +24,7 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
     <script src="../JS/general.js" defer></script>
-    <script src="../JS/produitOurson.js" defer></script>
+    <script src="../JS/commande.js" defer></script>
 </head>
 <body>
     <header class="row" >
@@ -46,12 +46,7 @@
                         <div id="navbarSupportedContent" class="collapse navbar-collapse">
                             <ul class="navbar-nav p-3">
                                 <li class="nav-item active">
-                                    <a class="nav-link text-white" href="../../index.html">Accueil</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link text-white dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Produits</a>
-                                    <div id="linkOurson" class="dropdown-menu bg-secondary" aria-labelledby="navbarDropdown">
-                                    </div>
+                                    <a id="accueil" class="nav-link text-white" href="../../index.html">Accueil</a>
                                 </li>
                                 <li class="nav-item">
                                     <a id="apercuPanier" class="nav-link text-white" href="./panier.html">Panier</a>
@@ -63,8 +58,43 @@
             </div>
         </div>
     </header>
-    <main>
-        <div id="oursonProduit" class="row g-3 justify-content-center">
+    <main class="p-5">
+        
+        <!-- Contact details -->
+        <section id="informations" class="mx-5 px-0 px-lg-5">
+            <p class="text-center fs-2 bg-secondary text-white">Informations</p>
+        </section>
+
+        <!-- Tableau  de commande -->
+        <section id="section" class="container my-5 align-middle border-top border-dark">
+            <p class="text-center fs-2 my-5 bg-secondary text-white">Récapitulatif de la commande</p>
+            <div class="table-responsive">
+                <table class="table table-hover my-auto mx-0">
+                    <thead>
+                        <tr class="text-center fs-5">
+                            <th scole="col">Produit</th>
+                            <th scole="col">Nom</th>
+                            <th scole="col">Option</th>
+                            <th scole="col">Quantité</th>
+                            <th scole="col">Prix</th>
+                            <th scole="col">Sous-total</th>
+                        </tr>
+                    </thead>
+                    <tbody id="listePanier">
+                        <!--Insertion panierOurson.js-->
+                    </tbody>
+                    <tfoot>
+                        <tr class="text-center fs-5">
+                            <th colspan="4"></th>
+                            <th colspan="1" class="bg-light">Total : </th>
+                            <th colspan="1" id="prixTotal" class="bg-light"></th>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </section>
+        <div class="px-5 mx-5 d-md-flex justify-content-md-end">
+            <button type="submit" class="btn btn-secondary mx-5 align-end" id="imprimer">Imprimer la commande</button>
         </div>
     </main>
 </body>

@@ -10,6 +10,9 @@
     <link rel="stylesheet" type="text/css" href="./Front-End/CSS/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
 
+    <!-- favicon -->
+    <link rel="icon" type="image/png" sizes="16x16"  href="./Front-End/Images/favicon-16x16.png">
+
     <!-- jQuery, Popper.js -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
@@ -48,21 +51,6 @@
             </div>
             <div id="carouselControls" class="col-sm-4 carousel slide p-0 m-auto" data-ride="carousel">
                 <div id="carouselOurson" class="carousel-inner">
-                    <!-- <div class="carousel-item">
-                        <img src="./Back-End/images/teddy_1.jpg" alt="image représentant un ours en peluche" class="d-block w-100" height="250px" >
-                    </div>
-                    <div class="carousel-item active">
-                        <img src="./Back-End/images/teddy_2.jpg" alt="image représentant un ours en peluche" class="d-block w-100" height="250px" >
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./Back-End/images/teddy_3.jpg" alt="image représentant un ours en peluche" class="d-block w-100" height="250px" >
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./Back-End/images/teddy_4.jpg" alt="image représentant un ours en peluche" class="d-block w-100" height="250px" >
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./Back-End/images/teddy_5.jpg" alt="image représentant un ours en peluche" class="d-block w-100" height="250px" >
-                    </div> -->
                 </div>
                 <a class="carousel-control-prev" href="#carouselControls" role="button" data-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -88,17 +76,7 @@
                                     <a class="nav-link text-white" href="./index.html">Accueil</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link text-white dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Produits</a>
-                                    <div id="linkOurson" class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
-                                        <!-- <a class="dropdown-item text-white" href="#Ourson">Ourson</a>
-                                        <a class="dropdown-item text-white" href="#Ourson 2">Ourson 2</a>
-                                        <a class="dropdown-item text-white" href="#Ourson 3">Ourson 3</a>
-                                        <a class="dropdown-item text-white" href="#Ourson 4">Ourson 4</a>
-                                        <a class="dropdown-item text-white" href="#Ourson 5">Ourson 5</a> -->
-                                    </div>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link text-white" href="#">Panier</a>
+                                    <a id="apercuPanier" class="nav-link text-white" href="./Front-End/Pages/panier.html">Panier</a>
                                 </li>
                             </ul>
                         </div>
@@ -116,49 +94,13 @@
                     <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
                 </form>
             </div>
-            <!-- <a href="./Front-End/Pages/produit.html">ICI la page !!</a> -->
-            <!-- <a href="#" id="Ourson" class="col-sm-4 p-3 card">
-                <img src="./Back-End/images/teddy_1.jpg" alt="image représentant un ours en peluche" class="card-img-top" height="250px">
-                <div class="card-body">
-                    <h2 class="card-title">Titre de la carte</h2>
-                    <p class="card-text">Blob</p>
-                </div>
-            </a>
-            <a href="#" id="Ourson 2" class="col-sm-4 p-3 card">
-                <img src="./Back-End/images/teddy_2.jpg" alt="image représentant un ours en peluche" class="card-img-top" height="250px">
-                <div class="card-body">
-                    <h2 class="card-title">Titre de la carte</h2>
-                    <p class="card-text">Contenu de la carte</p>
-                </div>
-            </a>
-            <a href="#" id="Ourson 3" class="col-sm-4 p-3 card">
-                <img src="./Back-End/images/teddy_3.jpg" alt="image représentant un ours en peluche" class="card-img-top" height="250px">
-                <div class="card-body">
-                    <h2 class="card-title">Titre de la carte</h2>
-                    <p class="card-text">Contenu de la carte</p>
-                </div>
-            </a>
-            <a href="#" id="Ourson 4" class="col-sm-4 p-3 card">
-                <img src="./Back-End/images/teddy_4.jpg" alt="image représentant un ours en peluche" class="card-img-top" height="250px">
-                <div class="card-body">
-                    <h2 class="card-title">Titre de la carte</h2>
-                    <p class="card-text">Contenu de la carte</p>
-                </div>
-            </a>
-            <a href="#" id="Ourson 5" class="col-sm-4 p-3 card">
-                <img src="./Back-End/images/teddy_5.jpg" alt="image représentant un ours en peluche" class="card-img-top" height="250px">
-                <div class="card-body">
-                    <h2 class="card-title">Titre de la carte</h2>
-                    <p class="card-text">Contenu de la carte</p>
-                </div>
-            </a> -->
         </div>
     </main>
     <footer class="bg-secondary p-4" >
         <div class="container">
             <div class="row">
                 <div class="col-sm text-white" >
-                    <h3>A propos</h3>
+                    <h2>A propos</h2>
                     <ul>
                         <li><a class=" text-white" href="#">Fonctionnement du site</a></li>
                         <li><a class=" text-white" href="#">Conditions générales de vente</a></li>
@@ -166,16 +108,16 @@
                     </ul>
                 </div>
                 <div class="col-sm text-white" >
-                    <h3>Nos Produits</h3>
+                    <h2>Nos Produits</h2>
                     <ul>
                         <li><a class=" text-white" href="#">Charte qualité</a></li>
                     </ul>
                 </div>
                 <div class="col-sm text-white" >
-                    <h3>Assistance</h3>
+                    <h2>Assistance</h2>
                     <ul>
                         <li><a class=" text-white" href="#">Centre d'aide</a></li>
-                        <li><a class=" text-white" href="mailto:L'oursEnPeluche@ourson.fr">Nous contacter</a></li>
+                        <li><a class=" text-white" href="mailto:`L'oursEnPeluche@ourson.fr`">Nous contacter</a></li>
                     </ul>
                 </div>
             </div>

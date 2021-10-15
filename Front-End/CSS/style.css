@@ -6117,15 +6117,14 @@ readers do not read off random characters that represent icons */
   font-weight: 900;
 }
 
-body > header > div {
+body > header > div,
+body > main {
   background: #f1e6f1;
 }
 
-@media (min-width: 64em) {
-  main img {
-    width: 100%;
-    height: 400px !important;
-  }
+main img {
+  height: auto !important;
+  width: 450px;
 }
 
 img:hover,
