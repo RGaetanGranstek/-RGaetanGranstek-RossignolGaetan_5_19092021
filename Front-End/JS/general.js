@@ -6,13 +6,13 @@ const adresse = fetch("http://localhost:3000/api/teddies")
     }
   })
   .then((value) => {
+    // console.table(value);
     addCarte(value);
   })
   .catch((err) => {
     console.log(err);
     // Une erreur est survenue
   });
-// console.log(oursonSelect());
 
 //récupérer l'id dans l'url des objets
 const parsedUrl = new URL(window.location.href);

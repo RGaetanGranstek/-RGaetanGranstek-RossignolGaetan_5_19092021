@@ -51,21 +51,34 @@ if (panier.length < 1) {
   prixTotal();
 
   //affiche le formulaire et cache les boutons valider/supprimer panier
+  affichageBouton();
+
+  //vide le panier
+  boutonEffacePanier();
+
+  //validation du formulaire et envoie en POST
+  validationFormulairePOST();
+}
+
+function affichageBouton() {
+  //affiche le formulaire et cache les boutons valider/supprimer panier
   const validationpanier = document.getElementById("validationpanier");
   const validationButton = document.getElementById("validationButton");
   validationpanier.addEventListener("click", () => {
     formulaire.classList.toggle("d-none");
     validationButton.classList.add("d-none");
   });
+}
 
-  //vide le panier
+function boutonEffacePanier() {
   const buttonclearPanier = document.getElementById("effacerPanier");
   buttonclearPanier.addEventListener("click", () => {
     effacerPanier();
     location.reload();
   });
+}
 
-  //validation du formulaire et envoie en POST
+function validationFormulairePOST() {
   const commande = document.getElementById("commande");
   const regexName = /^(([a-zA-ZÀ-ÿ]+[\s\-]{1}[a-zA-ZÀ-ÿ]+)|([a-zA-ZÀ-ÿ]+))$/;
   const regexCity =
