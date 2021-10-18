@@ -156,8 +156,7 @@ function validationFormulairePOST() {
         .then((ourson) => {
           localStorage.setItem("order", JSON.stringify(ourson));
           // console.table(ourson);
-          document.location.href =
-            "http://127.0.0.1:5500/Front-End/Pages/commande.html";
+          document.location.href = "commande.html";
         })
         .catch((erreur) => console.log("erreur : " + erreur));
     } else {
