@@ -108,6 +108,7 @@ fetch(newUrl)
         } else {
           panier.push(produitOurson);
           localStorage.setItem("oursonCommande", JSON.stringify(panier));
+          alert("L'article et ajouté au panier");
         }
         location.reload();
       });
